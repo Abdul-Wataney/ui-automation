@@ -47,58 +47,58 @@ public class HomePage {
 	}
 	
 
-//	@Test 
-//	public void allItemFunctionTest() throws InterruptedException {
-//		
-//		WebElement Item = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
-//		Item.click();
-//		
-//		WebElement Menu = driver.findElement(By.xpath("//*[@id=\"react-burger-menu-btn\"]"));
-//		Menu.click();
-//		
-//		Thread.sleep(1000);
-//		
-//		WebElement AllItem = driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div[1]/div[1]/div/div[2]/div[1]/nav/a[1]"));
-//		AllItem.click();
-//
-//	}
-//
-//	@Test 
-//	public void facebookIconTest() throws InterruptedException {
-//		
-//		WebElement facebook = driver.findElement(By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[2]/a"));
-//		JavascriptExecutor js = ((JavascriptExecutor) driver);
-//		js.executeScript("arguments[0].scrollIntoView(true);", facebook);
-//		Thread.sleep(1000);
-//		facebook.click();
-//		Thread.sleep(6000);
-//		
-//	}
-//	
-//	@Test 
-//	public void twitterIconTest() throws InterruptedException {
-//		
-//		WebElement twitter = driver.findElement(By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[1]/a"));
-//		JavascriptExecutor js = ((JavascriptExecutor) driver);
-//		js.executeScript("arguments[0].scrollIntoView(true);", twitter);
-//		Thread.sleep(1000);
-//		twitter.click();
-//		Thread.sleep(5000);
-//		
-//	}
-//	
-//	
-//	@Test 
-//	public void linkedInIconTest() throws InterruptedException {
-//		
-//		WebElement LinkedIn = driver.findElement(By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[3]/a"));
-//		JavascriptExecutor js = ((JavascriptExecutor) driver);
-//		js.executeScript("arguments[0].scrollIntoView(true);", LinkedIn);
-//		Thread.sleep(1000);
-//		LinkedIn.click();
-//		Thread.sleep(3000);
-//		
-//	}
+	@Test 
+	public void allItemFunctionTest() throws InterruptedException {
+		
+		WebElement Item = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));
+		Item.click();
+		
+		WebElement Menu = driver.findElement(By.xpath("//*[@id=\"react-burger-menu-btn\"]"));
+		Menu.click();
+		
+		Thread.sleep(1000);
+		
+		WebElement AllItem = driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div[1]/div[1]/div/div[2]/div[1]/nav/a[1]"));
+		AllItem.click();
+
+	}
+
+	@Test 
+	public void facebookIconTest() throws InterruptedException {
+		
+		WebElement facebook = driver.findElement(By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[2]/a"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].scrollIntoView(true);", facebook);
+		Thread.sleep(1000);
+		facebook.click();
+		Thread.sleep(6000);
+		
+	}
+	
+	@Test 
+	public void twitterIconTest() throws InterruptedException {
+		
+		WebElement twitter = driver.findElement(By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[1]/a"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].scrollIntoView(true);", twitter);
+		Thread.sleep(1000);
+		twitter.click();
+		Thread.sleep(5000);
+		
+	}
+	
+	
+	@Test 
+	public void linkedInIconTest() throws InterruptedException {
+		
+		WebElement LinkedIn = driver.findElement(By.xpath("//*[@id=\"page_wrapper\"]/footer/ul/li[3]/a"));
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].scrollIntoView(true);", LinkedIn);
+		Thread.sleep(1000);
+		LinkedIn.click();
+		Thread.sleep(3000);
+		
+	}
 	
 	
 	@Test 
@@ -111,16 +111,16 @@ public class HomePage {
 		optionValue.selectByValue("lohi");
 		
 		Thread.sleep(1000);
-		//WebElement filter2 = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
-		optionValue.selectByValue("hilo");
+		WebElement filter2 = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
+		optionValue.selectByIndex(2);
 		
 		Thread.sleep(1000);
 		//WebElement filter3 = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
-		optionValue.selectByValue("za");
+		optionValue.selectByIndex(1);
 		
 		Thread.sleep(1000);
 		//WebElement filter4 = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
-		optionValue.selectByValue("az");
+		optionValue.selectByIndex(0);
 		
 	}
 

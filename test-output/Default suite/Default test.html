@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 12 14:00:17 EET 2022</td>
+<td>Started on:</td><td>Sat Mar 12 15:45:50 EET 2022</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17573 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21593 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -82,9 +82,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;AWATANY-A40-D&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97afc2306bfcdf55560e7ddb0c860b94, findChildElements {id=9b660d0c-eab8-4254-a2c0-492a21d3185f, using=xpath, value=.//option[@value = &quot;hilo&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\AWATANY\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49450/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 97afc2306bfcdf55560e7ddb0c860b94
+Command: [8c7df8910a4324c5cf40032e071a7a47, findChildElements {id=4a9697bc-d4b3-4945-be6c-9cb0c5e44b33, using=tag name, value=option}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\AWATANY\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54937/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c7df8910a4324c5cf40032e071a7a47
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -101,8 +101,9 @@ Session ID: 97afc2306bfcdf55560e7ddb0c860b94
 	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
 	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:213)
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:284)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at org.openqa.selenium.support.ui.Select.getOptions(Select.java:79)
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:295)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:176)
 	at com.SWAGLABS.Testcases.HomePage.filterationTest(HomePage.java:115)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -132,16 +133,16 @@ Session ID: 97afc2306bfcdf55560e7ddb0c860b94
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1812200214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1812200214'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+</pre></div><a href='#' onClick='toggleBox("stack-trace1850301256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850301256'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=99.0.4844.51)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;AWATANY-A40-D&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97afc2306bfcdf55560e7ddb0c860b94, findChildElements {id=9b660d0c-eab8-4254-a2c0-492a21d3185f, using=xpath, value=.//option[@value = &quot;hilo&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\AWATANY\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49450/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 97afc2306bfcdf55560e7ddb0c860b94
+Command: [8c7df8910a4324c5cf40032e071a7a47, findChildElements {id=4a9697bc-d4b3-4945-be6c-9cb0c5e44b33, using=tag name, value=option}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\AWATANY\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54937/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c7df8910a4324c5cf40032e071a7a47
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -158,8 +159,9 @@ Session ID: 97afc2306bfcdf55560e7ddb0c860b94
 	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
 	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:213)
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:284)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at org.openqa.selenium.support.ui.Select.getOptions(Select.java:79)
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:295)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:176)
 	at com.SWAGLABS.Testcases.HomePage.filterationTest(HomePage.java:115)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
