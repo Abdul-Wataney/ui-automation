@@ -6,6 +6,8 @@
 │       └───SWAGLABS
 │           └───Testcases
 ├───resources
+│    ├───Test Cases .xlsx
+│    ├───chromedriver.exe   
 ├───src
 │   └───com
 │       └───SWAGLABS
