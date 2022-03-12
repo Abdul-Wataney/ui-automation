@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SWAG LABS Test">
+  <test thread-count="5" name="End to End Test">
+    <classes>
+      <class name="com.SWAGLABS.Testcases.HomePage"/>
+      <class name="com.SWAGLABS.Testcases.CartShopping"/>
+      <class name="com.SWAGLABS.Testcases.MenuBar"/>
+      <class name="com.SWAGLABS.Testcases.LoginPageTest"/>
+    </classes>
+  </test> <!-- End to End Test -->
+</suite> <!-- SWAG LABS Test -->
