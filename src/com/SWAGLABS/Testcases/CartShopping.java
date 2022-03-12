@@ -20,8 +20,9 @@ WebDriver driver;
 	
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
-		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\AWATANY\\Downloads\\Chrome\\chromedriver.exe");
+		Constants constant = new Constants();
+
+		System.setProperty("webdriver.chrome.driver", constant.chrome_path);
 		driver = new ChromeDriver();
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("resolution", "1024x768");

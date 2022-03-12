@@ -1,214 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-12T19:34:28 EET" name="Default suite" finished-at="2022-03-12T19:36:59 EET" duration-ms="151251">
+  <suite started-at="2022-03-12T19:55:01 EET" name="SWAG LABS Test" finished-at="2022-03-12T20:00:42 EET" duration-ms="341053">
     <groups>
     </groups>
-    <test started-at="2022-03-12T19:34:28 EET" name="Default test" finished-at="2022-03-12T19:36:59 EET" duration-ms="151251">
+    <test started-at="2022-03-12T19:55:01 EET" name="End to End Test" finished-at="2022-03-12T20:00:42 EET" duration-ms="341053">
       <class name="com.SWAGLABS.Testcases.HomePage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:34:28 EET" name="setUp" finished-at="2022-03-12T19:34:46 EET" duration-ms="18125" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:55:02 EET" name="setUp" finished-at="2022-03-12T19:55:16 EET" duration-ms="14416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="allItemFunctionTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:34:46 EET" name="allItemFunctionTest" finished-at="2022-03-12T19:34:50 EET" duration-ms="3973" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'AWATANY-A40-D', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d6456d93f16a5d2138f88ac8a76cf63, clickElement {id=e57f570a-ea4b-43a0-8bba-70bbf3b1b62e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\AWATANY\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60665}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60665/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4d6456d93f16a5d2138f88ac8a76cf63)] -> xpath: /html/body/div/div/div/div[1]/div[1]/div[1]/div/div[2]/div[1]/nav/a[1]]
-Session ID: 4d6456d93f16a5d2138f88ac8a76cf63]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'AWATANY-A40-D', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d6456d93f16a5d2138f88ac8a76cf63, clickElement {id=e57f570a-ea4b-43a0-8bba-70bbf3b1b62e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\AWATANY\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60665}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60665/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4d6456d93f16a5d2138f88ac8a76cf63)] -> xpath: /html/body/div/div/div/div[1]/div[1]/div[1]/div/div[2]/div[1]/nav/a[1]]
-Session ID: 4d6456d93f16a5d2138f88ac8a76cf63
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.SWAGLABS.Testcases.HomePage.allItemFunctionTest(HomePage.java:63)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="allItemFunctionTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:55:16 EET" name="allItemFunctionTest" finished-at="2022-03-12T19:55:20 EET" duration-ms="3570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allItemFunctionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:34:50 EET" name="tearDown" finished-at="2022-03-12T19:34:55 EET" duration-ms="4688" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:55:20 EET" name="tearDown" finished-at="2022-03-12T19:55:24 EET" duration-ms="4570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:34:55 EET" name="setUp" finished-at="2022-03-12T19:35:28 EET" duration-ms="32601" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:55:24 EET" name="setUp" finished-at="2022-03-12T19:55:33 EET" duration-ms="9150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="facebookIconTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:35:28 EET" name="facebookIconTest" finished-at="2022-03-12T19:35:37 EET" duration-ms="9512" status="PASS">
+        <test-method signature="facebookIconTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:55:33 EET" name="facebookIconTest" finished-at="2022-03-12T19:55:42 EET" duration-ms="8942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- facebookIconTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:35:37 EET" name="tearDown" finished-at="2022-03-12T19:35:43 EET" duration-ms="6104" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:55:42 EET" name="tearDown" finished-at="2022-03-12T19:55:48 EET" duration-ms="5463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:35:43 EET" name="setUp" finished-at="2022-03-12T19:35:58 EET" duration-ms="14416" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:55:48 EET" name="setUp" finished-at="2022-03-12T19:55:57 EET" duration-ms="9165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="filterationTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:35:58 EET" name="filterationTest" finished-at="2022-03-12T19:36:01 EET" duration-ms="3267" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=99.0.4844.51)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'AWATANY-A40-D', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd6d12dcdc8243dafcd7770ec02445bb, findChildElements {id=2696ef95-7032-4851-bf65-2bbcd6783554, using=tag name, value=option}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\AWATANY\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60740/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fd6d12dcdc8243dafcd7770ec02445bb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=99.0.4844.51)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'AWATANY-A40-D', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd6d12dcdc8243dafcd7770ec02445bb, findChildElements {id=2696ef95-7032-4851-bf65-2bbcd6783554, using=tag name, value=option}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\AWATANY\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60740/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fd6d12dcdc8243dafcd7770ec02445bb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
-at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:213)
-at org.openqa.selenium.support.ui.Select.getOptions(Select.java:79)
-at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:295)
-at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:176)
-at com.SWAGLABS.Testcases.HomePage.filterationTest(HomePage.java:116)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="filterationTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:55:57 EET" name="filterationTest" finished-at="2022-03-12T19:56:03 EET" duration-ms="6453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:36:01 EET" name="tearDown" finished-at="2022-03-12T19:36:05 EET" duration-ms="4384" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:56:03 EET" name="tearDown" finished-at="2022-03-12T19:56:08 EET" duration-ms="4333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:36:05 EET" name="setUp" finished-at="2022-03-12T19:36:21 EET" duration-ms="16149" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:56:08 EET" name="setUp" finished-at="2022-03-12T19:56:17 EET" duration-ms="9183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="linkedInIconTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:36:21 EET" name="linkedInIconTest" finished-at="2022-03-12T19:36:27 EET" duration-ms="5162" status="PASS">
+        <test-method signature="linkedInIconTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:56:17 EET" name="linkedInIconTest" finished-at="2022-03-12T19:56:22 EET" duration-ms="5476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkedInIconTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:36:27 EET" name="tearDown" finished-at="2022-03-12T19:36:32 EET" duration-ms="5219" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:56:22 EET" name="tearDown" finished-at="2022-03-12T19:56:26 EET" duration-ms="4195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:36:32 EET" name="setUp" finished-at="2022-03-12T19:36:48 EET" duration-ms="16275" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:56:26 EET" name="setUp" finished-at="2022-03-12T19:56:35 EET" duration-ms="8818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="twitterIconTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:36:48 EET" name="twitterIconTest" finished-at="2022-03-12T19:36:55 EET" duration-ms="6838" status="PASS">
+        <test-method signature="twitterIconTest()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:56:35 EET" name="twitterIconTest" finished-at="2022-03-12T19:56:43 EET" duration-ms="8064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twitterIconTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@4d465b11]" started-at="2022-03-12T19:36:55 EET" name="tearDown" finished-at="2022-03-12T19:36:59 EET" duration-ms="4173" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.HomePage@618425b5]" started-at="2022-03-12T19:56:43 EET" name="tearDown" finished-at="2022-03-12T19:56:48 EET" duration-ms="4548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.SWAGLABS.Testcases.HomePage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.SWAGLABS.Testcases.MenuBar">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:58:03 EET" name="login" finished-at="2022-03-12T19:58:17 EET" duration-ms="13186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="aboutTest()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:58:17 EET" name="aboutTest" finished-at="2022-03-12T19:58:33 EET" duration-ms="16316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:58:33 EET" name="tearDown" finished-at="2022-03-12T19:58:39 EET" duration-ms="6637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:58:39 EET" name="login" finished-at="2022-03-12T19:58:52 EET" duration-ms="12903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="allItemTest()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:58:52 EET" name="allItemTest" finished-at="2022-03-12T19:58:53 EET" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allItemTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:58:53 EET" name="tearDown" finished-at="2022-03-12T19:58:59 EET" duration-ms="6214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:58:59 EET" name="login" finished-at="2022-03-12T19:59:11 EET" duration-ms="12148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logOutTest()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:59:11 EET" name="logOutTest" finished-at="2022-03-12T19:59:12 EET" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:59:12 EET" name="tearDown" finished-at="2022-03-12T19:59:18 EET" duration-ms="6216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:59:18 EET" name="login" finished-at="2022-03-12T19:59:31 EET" duration-ms="12752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="resetAppStateTest()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:59:31 EET" name="resetAppStateTest" finished-at="2022-03-12T19:59:31 EET" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppStateTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.MenuBar@4310d43]" started-at="2022-03-12T19:59:31 EET" name="tearDown" finished-at="2022-03-12T19:59:37 EET" duration-ms="6387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SWAGLABS.Testcases.MenuBar -->
+      <class name="com.SWAGLABS.Testcases.CartShopping">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:56:48 EET" name="setUp" finished-at="2022-03-12T19:57:00 EET" duration-ms="12464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="cancelTest()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:00 EET" name="cancelTest" finished-at="2022-03-12T19:57:01 EET" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:01 EET" name="tearDown" finished-at="2022-03-12T19:57:05 EET" duration-ms="4428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:05 EET" name="setUp" finished-at="2022-03-12T19:57:18 EET" duration-ms="12980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkOutTest()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:18 EET" name="checkOutTest" finished-at="2022-03-12T19:57:20 EET" duration-ms="1929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:20 EET" name="tearDown" finished-at="2022-03-12T19:57:24 EET" duration-ms="4215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:24 EET" name="setUp" finished-at="2022-03-12T19:57:36 EET" duration-ms="11587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="continueShoppingTest()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:36 EET" name="continueShoppingTest" finished-at="2022-03-12T19:57:36 EET" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- continueShoppingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:36 EET" name="tearDown" finished-at="2022-03-12T19:57:41 EET" duration-ms="4261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:41 EET" name="setUp" finished-at="2022-03-12T19:57:58 EET" duration-ms="16944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="removeTest()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:58 EET" name="removeTest" finished-at="2022-03-12T19:57:59 EET" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.CartShopping@201a4587]" started-at="2022-03-12T19:57:59 EET" name="tearDown" finished-at="2022-03-12T19:58:03 EET" duration-ms="4547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SWAGLABS.Testcases.CartShopping -->
+      <class name="com.SWAGLABS.Testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T19:59:37 EET" name="setUp" finished-at="2022-03-12T19:59:44 EET" duration-ms="6716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="titleTest()[pri:1, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T19:59:44 EET" name="titleTest" finished-at="2022-03-12T19:59:44 EET" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T19:59:44 EET" name="tearDown" finished-at="2022-03-12T19:59:45 EET" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T19:59:45 EET" name="setUp" finished-at="2022-03-12T19:59:52 EET" duration-ms="6922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="urlCheck()[pri:2, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T19:59:52 EET" name="urlCheck" finished-at="2022-03-12T19:59:52 EET" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T19:59:52 EET" name="tearDown" finished-at="2022-03-12T19:59:53 EET" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T19:59:53 EET" name="setUp" finished-at="2022-03-12T20:00:00 EET" duration-ms="7006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logoTest()[pri:3, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:00 EET" name="logoTest" finished-at="2022-03-12T20:00:00 EET" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:00 EET" name="tearDown" finished-at="2022-03-12T20:00:02 EET" duration-ms="1358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:02 EET" name="setUp" finished-at="2022-03-12T20:00:08 EET" duration-ms="6600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:4, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:08 EET" name="loginTest" data-provider="myData" finished-at="2022-03-12T20:00:10 EET" duration-ms="1651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:10 EET" name="tearDown" finished-at="2022-03-12T20:00:12 EET" duration-ms="1646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:12 EET" name="setUp" finished-at="2022-03-12T20:00:19 EET" duration-ms="6983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:4, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:19 EET" name="loginTest" data-provider="myData" finished-at="2022-03-12T20:00:20 EET" duration-ms="1395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:20 EET" name="tearDown" finished-at="2022-03-12T20:00:22 EET" duration-ms="1472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:22 EET" name="setUp" finished-at="2022-03-12T20:00:29 EET" duration-ms="7571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:4, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:29 EET" name="loginTest" data-provider="myData" finished-at="2022-03-12T20:00:31 EET" duration-ms="1473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:31 EET" name="tearDown" finished-at="2022-03-12T20:00:32 EET" duration-ms="1146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:32 EET" name="setUp" finished-at="2022-03-12T20:00:39 EET" duration-ms="7137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:4, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:39 EET" name="loginTest" data-provider="myData" finished-at="2022-03-12T20:00:41 EET" duration-ms="1774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SWAGLABS.Testcases.LoginPageTest@54a7079e]" started-at="2022-03-12T20:00:41 EET" name="tearDown" finished-at="2022-03-12T20:00:42 EET" duration-ms="1763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SWAGLABS.Testcases.LoginPageTest -->
+    </test> <!-- End to End Test -->
+  </suite> <!-- SWAG LABS Test -->
 </testng-results>

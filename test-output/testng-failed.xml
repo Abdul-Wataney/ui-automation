@@ -7,7 +7,6 @@
         <methods>
           <include name="filterationTest"/>
           <include name="tearDown"/>
-          <include name="allItemFunctionTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.SWAGLABS.Testcases.HomePage -->

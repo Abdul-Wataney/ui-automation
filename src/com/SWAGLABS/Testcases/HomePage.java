@@ -19,12 +19,14 @@ import org.testng.annotations.Test;
 public class HomePage {
 
 	WebDriver driver;
-	
+	Select optionValue;
+	WebElement filter;
 	@BeforeMethod
 	public void setUp() {
+		Constants constant = new Constants();
 		
 		//C:\\Users\\AWATANY\\Downloads\\Chrome\\chromedriver.exe
-		System.setProperty("webdriver.chrome.driver", "resources\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", constant.chrome_path);
 		driver = new ChromeDriver();
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("resolution", "1024x768");
@@ -101,26 +103,29 @@ public class HomePage {
 		
 	}
 	
-	
+//	
 	@Test 
 	public void filterationTest() throws InterruptedException {
 		
-		WebElement filter = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
+		filter = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
 		
-		Select optionValue = new Select(filter);
+		optionValue = new Select(filter);
 		
 		optionValue.selectByValue("lohi");
 		
 		Thread.sleep(1000);
-		WebElement filter2 = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
+		filter = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
+		optionValue = new Select(filter);
 		optionValue.selectByIndex(2);
 		
 		Thread.sleep(1000);
-		//WebElement filter3 = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
+		filter = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
+		optionValue = new Select(filter);
 		optionValue.selectByIndex(1);
 		
 		Thread.sleep(1000);
-		//WebElement filter4 = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
+		filter = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div[2]/span/select"));
+		optionValue = new Select(filter);
 		optionValue.selectByIndex(0);
 		
 	}
