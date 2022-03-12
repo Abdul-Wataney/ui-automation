@@ -5,9 +5,13 @@
     <classes>
       <class name="com.SWAGLABS.Testcases.HomePage">
         <methods>
+          <include name="facebookIconTest"/>
           <include name="filterationTest"/>
           <include name="tearDown"/>
+          <include name="linkedInIconTest"/>
+          <include name="allItemFunctionTest"/>
           <include name="setUp"/>
+          <include name="twitterIconTest"/>
         </methods>
       </class> <!-- com.SWAGLABS.Testcases.HomePage -->
     </classes>

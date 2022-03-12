@@ -23,7 +23,8 @@ public class HomePage {
 	@BeforeMethod
 	public void setUp() {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\AWATANY\\Downloads\\Chrome\\chromedriver.exe");
+		//C:\\Users\\AWATANY\\Downloads\\Chrome\\chromedriver.exe
+		System.setProperty("webdriver.chrome.driver", "resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("resolution", "1024x768");
